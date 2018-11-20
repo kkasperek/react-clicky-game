@@ -5,7 +5,7 @@ const Nav = props => (
   <nav>
     <ul>
       <li className="brand animated lightSpeedIn">
-        <a href="/">{props.title}</a>
+        <a href="https://github.com/kkasperek/react-clicky-game">{props.title}</a>
       </li>
 
       <li id="winLose">{props.winLose}</li>

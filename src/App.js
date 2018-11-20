@@ -43,7 +43,7 @@ class App extends Component {
     const newScore = this.state.currentScore + 1;
     this.setState({
       currentScore: newScore,
-      winLoss: ""
+      winLose: ""
     });
     if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
