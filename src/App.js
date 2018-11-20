@@ -18,13 +18,13 @@ function shuffleFriends(array) {
   return array;
 };
 
-//Set "this.state" of app class
+//Set the state of app class
 class App extends Component {
   state = {
     friends,
     currentScore: 0,
     topScore: 0,
-    winLoss: "",
+    winLose: "",
     clicked: [],
   };
 
@@ -49,7 +49,7 @@ class App extends Component {
       this.setState({ topScore: newScore });
     }
     else if (newScore === 12) {
-      this.setState({ winLoss: "You win!" });
+      this.setState({ winLose: "You win!" });
     }
     this.handleShuffle();
   };
@@ -59,7 +59,7 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      winLoss: "You Lose!",
+      winLose: "You Lose!",
       clicked: []
     });
     this.handleShuffle();
@@ -78,11 +78,11 @@ class App extends Component {
           title="The Clicky Game"
           score={this.state.currentScore}
           topScore={this.state.topScore}
-          winLoss={this.state.winLoss}
+          winLose={this.state.winLose}
         />
 
         <Title>
-          <h2>Instructions:</h2> Try to click on each character, but don't hit any duplicates!!!
+          <h2>Instructions:</h2> Try to click on each character, but don't hit any duplicates or you lose!!!
         </Title>
 
         <Container>

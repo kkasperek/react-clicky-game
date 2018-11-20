@@ -5,10 +5,10 @@ const Nav = props => (
   <nav>
     <ul>
       <li className="brand animated lightSpeedIn">
-        <a href="/clicky-game/">{props.title}</a>
+        <a href="/">{props.title}</a>
       </li>
 
-      <li id="rw">{props.winLose}</li>
+      <li id="winLose">{props.winLose}</li>
 
       <li id="cur-sco">Current Score: {props.score}</li>
 
